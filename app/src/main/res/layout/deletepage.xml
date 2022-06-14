@@ -3,35 +3,33 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".displayDataPage">
-
+    android:layout_height="match_parent">
 
     <EditText
-        android:id="@+id/productIdDisplayPage"
-        android:layout_width="249dp"
-        android:layout_height="41dp"
+        android:id="@+id/productIdDeletePage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-
         android:layout_marginTop="100dp"
         android:layout_marginEnd="100dp"
-        android:hint="Enter Product Id"
+        android:ems="10"
+        android:hint="Enter Product ID"
+        android:inputType="textPersonName"
         android:paddingStart="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/fetchBtndisplayPage"
+        android:id="@+id/deleteBtnDeletePage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="80dp"
         android:layout_marginEnd="100dp"
-        android:text="Display"
+        android:text="Delete Record !"
         app:cornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/productIdDisplayPage" />
-
+        app:layout_constraintTop_toBottomOf="@+id/productIdDeletePage" />
 </androidx.constraintlayout.widget.ConstraintLayout>
